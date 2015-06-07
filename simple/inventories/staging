@@ -1,0 +1,5 @@
+[webservers]
+staging-server
+
+[staging:children]
+webservers
