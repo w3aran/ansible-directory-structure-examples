@@ -1,6 +1,9 @@
 ---
 - name: Install Apache2
-  apt: name=apache2 state=installed
-  sudo: yes
+  apt: 
+    name=apache2
+    state=installed
+  sudo: 
+    yes
   tags:
       - apache2
