@@ -1,4 +1,0 @@
----
-- include: ../../../../../roles/apache2/tasks/disable-default-site.yml 
-  tag:
-    -  apache2

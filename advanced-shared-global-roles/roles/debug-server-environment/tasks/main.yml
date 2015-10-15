@@ -1,0 +1,3 @@
+---
+- name: "Display Server Environment" 
+  debug: msg="Server Environment - {{ serverMode }}"

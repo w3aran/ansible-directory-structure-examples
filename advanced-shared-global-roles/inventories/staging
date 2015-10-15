@@ -1,5 +1,5 @@
-[webservers]
-staging-server
+[example-web_web-servers]
+example-web_web-servers_staging-server
 
-[staging:children]
-webservers
+[STAGING:children]
+example-web_web-servers

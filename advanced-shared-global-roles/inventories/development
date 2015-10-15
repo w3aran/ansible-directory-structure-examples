@@ -1,5 +1,5 @@
-[webservers]
-dev-server
+[example-web_web-servers]
+example-web_web-servers_dev-server
 
-[dev:children]
-webservers
+[DEV:children]
+example-web_web-servers

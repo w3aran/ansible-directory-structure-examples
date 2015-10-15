@@ -1,0 +1,8 @@
+---
+exampleWeb_webServers_ssh_host: 10.0.0.102
+exampleWeb_webServers_ssh_user: vagrant
+exampleWeb_webServers_ssh_private_key_file: "./.vagrant/machines/default/virtualbox/private_key"
+
+ansible_ssh_host: "{{ exampleWeb_webServers_ssh_host }}"
+ansible_ssh_user: "{{ exampleWeb_webServers_ssh_user }}"
+ansible_ssh_private_key_file: "{{ exampleWeb_webServers_ssh_private_key_file }}"

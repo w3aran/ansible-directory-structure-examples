@@ -1,2 +1,2 @@
 ---
-- include: ./playbooks/web/site.yml
+- include: playbooks/example-web/site.yml

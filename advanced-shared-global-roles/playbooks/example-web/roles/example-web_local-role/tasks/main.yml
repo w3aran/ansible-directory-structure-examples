@@ -1,0 +1,7 @@
+---
+- name: "Display exampleLocalEnvironmentVariable" 
+  debug: msg="exampleLocalEnvironmentVariable - {{ exampleLocalEnvironmentVariable }}"
+
+- name: "Print exampleDefaultVariable Values"
+  debug: msg="exampleDefaultVariable {{ item }}"
+  with_items: "{{ exampleDefaultVariable }}"

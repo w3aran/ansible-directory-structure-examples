@@ -1,0 +1,10 @@
+---
+- name: Setup server for Example Web Project
+  hosts: example-web_web-servers
+  vars_files:
+    - vars/ALL.yml
+    - vars/{{ serverMode }}.yml
+  roles:
+    - debug-server-environment
+    - apache2
+    - example-web_local-role

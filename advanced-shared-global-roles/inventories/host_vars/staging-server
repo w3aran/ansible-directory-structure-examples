@@ -1,5 +1,0 @@
----
-# TODO: Change to staging server details
-ansible_ssh_host: 10.0.0.102
-ansible_ssh_user: vagrant 
-ansible_ssh_private_key_file: "./.vagrant/machines/default/virtualbox/private_key"

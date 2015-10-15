@@ -1,5 +1,5 @@
-[webservers]
-prod-server
+[example-web_web-servers]
+example-web_web-servers_prod-server
 
-[prod:children]
-webservers
+[PROD:children]
+example-web_web-servers
