@@ -1,3 +1,5 @@
+Vagrant.require_version ">= 1.7.4"
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
