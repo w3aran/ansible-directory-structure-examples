@@ -1,9 +1,17 @@
 Ansible Directory Structure Examples
 ====================================
 
+Goal: 
+
+- Install Apache2 on Ubuntu and 
+- Disable the default website and 
+- Restart Apache2
+
+Ansible Playbook Examples:
+
 1. Basic Ansible Playbook
-2. Introduction to Roles
-3. Introduction to Multi Environment Setup
+2. Basic Roles
+3. Basic Roles with Multi Environment Setup
 4. Advanced - Shared Global Roles with multiple Playbooks
 
 Basic Ansible Playbook
@@ -17,7 +25,7 @@ To run in a local computer:
   ansible-playbook site.yml -i inventory
 ```
 
-Introduction to Roles
+Basic Roles
 ---------------------
 
 To run in a local computer:
@@ -28,7 +36,7 @@ To run in a local computer:
   ansible-playbook site.yml -i inventory
 ```
 
-Introduction to Multi Environment Setup
+Basic Roles with Multi Environment Setup
 ---------------------------------------
 
 To run in a local computer:
@@ -56,8 +64,8 @@ To run in Production Environment mode:
   ansible-playbook site.yml -i inventories/production
 ```
 
-Advanced
---------
+Advanced - Shared Global Roles with multiple Playbooks
+------------------------------------------------------
 
 To run in a local computer:
 
