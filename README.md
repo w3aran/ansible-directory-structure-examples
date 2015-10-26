@@ -36,11 +36,23 @@ To run in a local computer:
 ```
   cd basic-roles-multi-environment
   vagrant up
-  # To run in Development Environment mode
+```
+
+To run in Development Environment mode:
+
+```
   ansible-playbook site.yml -i inventories/development
-  # To run in Staging Environment mode
+```
+
+To run in Staging Environment mode:
+
+```
   ansible-playbook site.yml -i inventories/staging
-  # To run in Production Environment mode
+```
+
+To run in Production Environment mode:
+
+```
   ansible-playbook site.yml -i inventories/production
 ```
 
