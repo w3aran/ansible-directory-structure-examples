@@ -22,7 +22,21 @@ To run in a local computer:
 ```
   cd basic
   vagrant up
+```
+
+Using Inventory file:
+
+```
   ansible-playbook site.yml -i inventory
+```
+
+Using Command line parameters:
+
+```
+  ansible-playbook site.yml \
+  -i 10.0.0.200, \
+  -u vagrant \
+  --private-key ./.vagrant/machines/default/virtualbox/private_key
 ```
 
 Basic Roles
