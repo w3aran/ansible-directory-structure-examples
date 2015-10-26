@@ -1,16 +1,16 @@
 Ansible Directory Structure Examples
 ====================================
 
-1. Basic
+1. Introduction to Multi Environment Setup
 2. Advanced - Shared Global Roles with multiple Playbooks
 
-Basic
+Introduction to Multi Environment Setup
 -----
 
 To run in a local computer:
 
 ```
-  cd simple
+  cd basic-multi-environment
   vagrant up
   ansible-playbook site.yml -i inventories/development
 ```
