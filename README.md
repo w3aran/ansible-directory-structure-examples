@@ -1,13 +1,13 @@
 Ansible Directory Structure Examples
 ====================================
 
-Goal: 
+*Goal:*
 
 - Install Apache2 on Ubuntu and 
 - Disable the default website and 
 - Restart Apache2
 
-Ansible Playbook Examples:
+*Different methods to achieve the above goal:*
 
 1. Basic Ansible Playbook
 2. Basic Roles
