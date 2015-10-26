@@ -1,6 +1,6 @@
 ---
 - name: Setup webserver
-  hosts: webservers
+  hosts: all
 
   tasks:
     - name: Update cache
