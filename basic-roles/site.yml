@@ -1,0 +1,6 @@
+---
+- name: Setup webserver
+  hosts: webservers
+  roles:
+    - core
+    - apache
