@@ -22,7 +22,7 @@ Introduction to Multi Environment Setup
 To run in a local computer:
 
 ```
-  cd basic-multi-environment
+  cd basic-roles-multi-environment
   vagrant up
   ansible-playbook site.yml -i inventories/development
 ```
