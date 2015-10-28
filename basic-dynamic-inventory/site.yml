@@ -1,0 +1,41 @@
+---
+- name: Setup webserver
+  hosts: all
+
+  tasks:
+    - name: Update cache
+      apt: 
+        update_cache=yes cache_valid_time=3600
+      sudo: 
+        yes
+      tags:
+        core
+    - name: Install Apache2
+      apt: 
+        name=apache2 state=installed
+      sudo: 
+        yes
+      tags:
+        - apache2
+    - name: Disable OS default site config
+      command: 
+        a2dissite 000-default
+      sudo: 
+        yes
+      register: 
+        result
+      changed_when: 
+        "'already disabled' not in result.stdout"
+      notify:
+        - restart-apache2
+      tags:
+        - apache2
+
+  handlers:
+    - name: restart-apache2
+      service: 
+        name=apache2 state=restarted
+      sudo: 
+        yes
+      tags:
+        - apache2
